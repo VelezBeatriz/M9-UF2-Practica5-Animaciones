@@ -1,23 +1,43 @@
-main {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 600px); /* Altura a tope menos el 300px de header más footer   */
-    overflow: hidden;
-}
-
-main img {
-    position: absolute;
-    bottom: -500px;
-    right: 0;
-    transform: rotate(-20deg);
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-    transition: bottom 0.7s ease 0.3s;
-   
+main{
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 600px); 
+  overflow: hidden;
 }
 
 
 
-footer:hover + main img{
-    bottom: 0;
 
+.container {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.container img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img.flip-card-back {
+  backface-visibility: hidden;
+}
+
+
+.container:hover img{
+  animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(-20deg) rotateY(0);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
 }
