@@ -1,7 +1,7 @@
 main {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 600px); /* Altura a tope menos el 300px de header más footer   */
     overflow: hidden;
 }
 
@@ -11,4 +11,13 @@ main img {
     right: 0;
     transform: rotate(-20deg);
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    transition: bottom 0.7s ease 0.3s;
+   
+}
+
+
+
+footer:hover + main img{
+    bottom: 0;
+
 }
