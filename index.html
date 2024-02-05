@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Tarjeta Beatriz Vélez</title>
-  </head>
-  <body>
+<!doctype html>
+<html lang="en">
 
-    <header>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHdElEQVR4nO2Za2xbBxmGPbS12pAQbA1J28RJF8dN0iS14/j4frePHcdOHF9atrZJ3EaVJhiatB8MsVEEYgIkJBBV292zdrk0pBJiGYgfaFr7AzTYgLapuq0DMhLfr2FVL6R90Tn2OT4+dtzZTTWE8klHivLreZ/zfp8VRyDYmI3ZmI35vxoEApsyBrcoYxqQJTXuXegMbKJ+3zQ1crlxejQrnBpNNs2Mvtk8GxwWQHCf4H9hcOTIF9JWtzdtds+nje6raaMbaYMLKf0Aklrnfxa05B8aJ0fQNDWCpulRCKfHIJwZQ/NM8PdbJw9v+Vzhs7ZBRcYy9NeMZQgZ8yDSpkFwA6R0TlxRWNE2sR9rhPhQNBus+1ysZ0jvMxmb52bG6kGlAIsqG9w/2ovGNw6UDSE8HXybqlPj7Mj25jPBp1rOjE+2zB16t2Vu/Mw9gV92uR7KkL75LOlF1jaMtQLEdU4sqe1Y0Njw9NNebD+1v0KIsd8JZ4M3W355EC1zh7DjzDh2zI1fWnf49NDQlzOk91zW7kOlABG9E+8bSTzxLS92vPw4tr2+D9tP7qsYovl0EM2zB8GGmBv/7brCJxz7vpS1+98vwJcLQMEPYN7Tj56je7H1tcfoZ9tE9SGa5w5+f93gIRDct+Lw/2bF4Uex/WFkLIUASaMLf7L2o+NoAA2v7EXDq1+rMUTwVuvsIdG6Bcg4/E+y8GXrM0TXJ2Vy4yO9He4f+FD/8p7aQ8yMfbT114cfWhf4T52BhhW7f2XFwYcv3/+EfgALOhKPP+u9uxCngxdb5g4233WArMP3UhF8kX0PbZ/pP3OBEnonFtUkJv0O7HluGK0nagshnBm7LJx84is1w6esAWHG7r3Jh1/xOXBjugG3zm0uPp9GV9FnQFTjwKLSiotyE4w/8dUaYqrmABnS97MCeME8BX/7bwLceKMhB8+xz8DTj6YfIRWJn+931l6n6bHbwtlRWdXwUAYezNq8KcY6WxurhzZPwa94yCL4tGGgEEDbj6TGgX8qLDA9P4z6l/bUHKJpZuxo9fatnscK4JzO569OpepQ8JT9pNqBBaUF9Sf8+OqLgdpDTI1eqDpA2jJ8mjHOXps7wfPsJ9R2vKszo+6EH3UvFIcQHwt89hBTI8mq4CE7/EDG7MmyxvngTG0qwCfVdiRVdiwQJjQc89Ehth3zw/RDD54fdeCsWlf2TWyf2IeTTiOe/KYL5p8GIDx5YLVp8sDVqgJkLC55AZoL/lngc9Wh4JMqEotyM84TRrynMuKSVIePJTosSQ240qOld4MfwvxjHz7YSWCxncCHbX241Cr9uMryCAQZ8+DXS6B54OXg6d6z9kkklDYkFFYkCCticgvifWbEZSbEe41Ykuhx3Gst2Ylf+Mz4pF2BSLsC4Z0EwmI5/iUiGqsKkDa6jxdDu5EdsuLGZD1Wz20uXBu9swI8iYTCRsMnePAxqQFRiQFXujXY+8wgG8L/nSHafrhDiTAnwFJbn7W6AAb3W7Rpjm0Knr79p+qLbz3T+TvB5wPE8gFiEj0iu3W4sFsJ/7fd8Dw3iPe6CSx3MPYVCIsJhNvkWG6VDVUVIKV3/YUBZ2xT5in4jMtcsM4urANppwE3TtVh9ezmAjxhQbyMfQo+tluHaI8O4W4tLncqcbmDwHKnEhGe/VBbH8KP9pqrCpDUDfyD7TfXNh+cc20oeOoNXX+97g7wBsR262n4aLcW0S4NIrvUCHeqaPhC93P2Q6I+LO6UbqsygDNZDroYvFCZpJLE6tlNNHzKpsvVpgJ8zr4W0W4Nol1qOkAkH4Bvf1kkO18VPB1A03+dhWaWk2s8b72o7/lrk4M38+CNOXgJF17L2i8Hz9hffrT3qeoDqB2fFiyXQrPg9Jlk+l66sCy89M7wEd7i0vCtslC4vueLVQdIqMhUDrYYOsmFLrHOqQy/NpyljesJXHvtYay+80AOfo3qhEQyhEQSf9Xw9BtQkNEcbB64HDQfnLW+NjxlnoKnlv3aKw9Xrk5r7wlBrRNX2BaKgPPQKVKH6ye30AtbAl62MqW1ocxT8DGNjAdfqE6oVfbnTxqVD9YcICG3zrOWCQttmnooePpUTmwpBc9bT5iUuD7xCFbf2ZSzzoGPUp0v6T1RgKer0/tBSCS5u68b43LL9+Lca5J/6FM5sQVJi7oEnLFOwdMVefURzqlk4FXll1bM9n4x1CK9+z/kozKrtsgw9+k1lgVnuk6Zp+DjOoKFZ61XgF9ulf0xJpRtFazXF1mxXsNFBrYAzIUuBucuKlsZ3odUSefFFLzsWkjU910YDPcL1nPiUv1gVGq4zQKXQHOuSwl43jq3Mjz4kFh+KyTqmwqLiR2CezUxif5IVKK/XQDmQTMLygEvWlRuZfLwoTb5Slgkf2GpXS6+Z+BFIXq0rmiP9jwLzIVmFnQt8Lz1kJj4d1gsnwuJ+w6Ee2r4ZF2PiXSpVZFuzbPRLs2vors05yNd6nBklyoV6aQe9dVIh5L6+e+RDsWFSIdyPtyuOB5uJ74RbpMRFzs76f+VbczGbMzGCLjzXwZOIKT2y6k0AAAAAElFTkSuQmCC"
+    alt="Icono Fresa" type="link">
+  <title>PR5: Animaciones - Vélez Beatriz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <main>
-      <div class="tarjeta">
-        <img src="carta.png" alt="carta">
-      </div>
-    </main>
+<body>
+  <!-- Header -->
+  <header>
+    <div>
+      <img src="img/pudin.png" alt="icono principal" width="100px">
+      <h1>🍓 PR5 - Animaciones 🍓</h1>
+      <p>Beatriz Vélez Sánchez</p>
+    </div>
+  </header>
+  <!-- Main -->
+  <main>
+    <img src="img/carta.png" width="300px" alt="Carta">
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Beatriz Vélez</p>
+  </footer>
+</body>
 
-    <footer>
-    </footer>
-
-  </body>
 </html>

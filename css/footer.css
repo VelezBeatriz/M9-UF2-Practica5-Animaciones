@@ -1,0 +1,19 @@
+footer{
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 300px; */ /*No entiendo el bien si cada etiqueta ha de medir 300px o es una referencia general*/
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer:hover main{
+    background-color: blue;
+}
