@@ -13,6 +13,7 @@ img{
 .container {
   width: 100%;
   height: 100%;
+/* EJERCICIO 2 */ 
   transform-style: preserve-3d;
 }
 
@@ -21,25 +22,31 @@ img{
   bottom: -500px;
   right: 0;
   height: 100%;
+/* EJERCICIO 1 */
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
   transition: bottom 0.7s ease 0.3s;
-  animation: spin 4s linear infinite;
+/* EJERCICIO 3 */
+  animation: spin 4s linear infinite reverse;
 }
 
+/* EJERCICIO 2 */ 
 img.flip-card-back {
   backface-visibility: hidden;
 }
 
+/* EJERCICIO 1 */ 
 footer:hover + main img{
   bottom: 0;
 
 }
 
+/* EJERCICIO 3 */
 @keyframes spin {
   0% {
     transform: rotateX(-20deg) rotateY(0);
   }
   100% {
     transform: rotateX(-20deg) rotateY(360deg);
+
   }
 }
